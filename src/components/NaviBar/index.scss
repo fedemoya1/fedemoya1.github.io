@@ -1,0 +1,104 @@
+.Nav-Bar{
+    background-color: #222831;
+    width: 100%;
+    height: 50px;
+    min-width: 350px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 3;
+
+    .Logo{
+        
+        font-size: 20px;
+        text-decoration: none;
+        color:#00adb5;
+        //font-family: 'Silkscreen', cursive;
+        font-family: 'Khula', sans-serif;
+        
+    }
+
+    nav{
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        a{
+            position: relative;
+
+            i{
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover{
+                color: #eeeeee;
+    
+                svg {
+                    opacity: 0;
+                }
+    
+                &:after{
+                    opacity: 1;
+                }
+            }
+            
+            &:after{
+                content: '';
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                font-size: 10px;
+                font-family: 'Khula', sans-serif;
+                letter-spacing: 1px;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child{
+                &::after{
+                    content: 'Inicio';
+                }
+            }
+        }
+
+        a.About-Link{
+            &:after{
+                content:'Info';
+            }
+        }
+
+        a.Contact-Link{
+            &:after{
+                content:'Contact';
+            }
+        }
+
+        a.active{
+            svg{
+                color:#eeeeee;
+            }
+        }
+
+    }
+
+    .External{
+        display: flex;
+        gap: 20px;
+        
+        a{
+            text-decoration: none;
+            color: #393e46;
+
+            &:hover{
+                color:#eeeeee;
+            }
+
+        }
+    }
+}

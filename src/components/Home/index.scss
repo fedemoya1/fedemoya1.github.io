@@ -1,0 +1,48 @@
+.Home-Page{
+
+    img{
+        //aspect-ratio: 1 / 1;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        animation: rollIn 1s ease-out;
+        //animation-delay: 0;
+    }
+
+    .Text-Zone{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        //padding-bottom: 50px;
+
+        h1{
+            color:#00adb5;
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+
+        h2{
+            font-weight: 400;
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+        }
+    }
+
+    .Contact-Button{
+        color:#00adb5;
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-decoration: none;
+        padding: 1rem;
+        border: 1px solid #00adb5;
+        white-space: nowrap;
+
+        &:hover{
+            background: #00adb5;
+            color: #eeeeee;
+        }
+    }
+}
