@@ -12,6 +12,8 @@ const NaviBar = () => {
                 <span>&lt;FedeMoya /&gt;</span>
             </Link>
 
+            <div className='Wrapper'>
+
             <nav>
 
                 <NavLink exact='true' activeclassname='active' className='Home-Link' to='/'>
@@ -29,17 +31,19 @@ const NaviBar = () => {
 
             </nav>
 
-            <div className='External'>
-                <a href='https://github.com/fedemoya1' target='_blank' rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href='https://www.instagram.com/fedemoya_/' target='_blank' rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href='https://www.linkedin.com/in/fedemoya/' target='_blank' rel="noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-            </div>
+                <div className='External'>
+                    <a href='https://github.com/fedemoya1' target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href='https://www.instagram.com/fedemoya_/' target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href='https://www.linkedin.com/in/fedemoya/' target='_blank' rel="noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                </div>
+
+                </div>
         </div>
     );
 }
