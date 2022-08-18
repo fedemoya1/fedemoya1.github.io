@@ -34,7 +34,7 @@ const NaviBar = () => {
 
             <div className='Wrapper'>
 
-                <nav className={`Nav ${menuClass}`}>
+                <nav className={`${menuClass}`}>
 
                     <NavLink exact='true' activeclassname='active' className='Home-Link' to='/'>
                         <FontAwesomeIcon icon={faHome} color='#393e46'/>

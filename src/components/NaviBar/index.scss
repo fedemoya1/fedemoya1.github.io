@@ -189,6 +189,16 @@
         justify-content: center;
         top: 50px;
         right: 0px;
+
+        &.Visible{
+            animation: fadeInRight 0.5s forwards;
+            opacity: 0;
+        }
+    
+        &.Hidden{
+            display: none;
+        }
+
     }
 
     .External{
@@ -203,15 +213,16 @@
         border-radius: 0 0 0 5px;
         top: 170px;
         right: 0px;
+        
+        &.Visible{
+            animation: fadeInRight 0.5s forwards;
+            opacity: 0;
+        }
+    
+        &.Hidden{
+            display: none;
+        }
     }
 
-    .Visible{
-        animation: fadeInRight 0.5s forwards;
-    }
-
-    .Hidden{
-        animation: fadeOutRight 0.5s forwards;
-        opacity: 0;
-    }
     
 }
