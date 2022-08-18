@@ -22,9 +22,8 @@
     }
 
     nav{
-
         display: flex;
-        flex-direction: row;
+        //flex-direction: row;
         gap: 20px;
 
         a{
@@ -87,6 +86,13 @@
 
     }
 
+}
+
+.Wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
     .External{
         display: flex;
         gap: 20px;
@@ -103,8 +109,110 @@
     }
 }
 
-.Wrapper{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.Burger{
+    display: none;
+    position: relative;
+    cursor: pointer;
+    
+    .Burger-Bar{
+    
+        background-color: #eeeeee;
+        width: 20px;
+        height: 4px;
+        border-radius: 5px;
+        
+        &:after{
+            content: "";
+            position: absolute;
+            background-color: #eeeeee;
+            width: 20px;
+            height: 4px;
+            border-radius: 5px;
+            top: 8px;   
+        }
+        
+        &:before{
+            content: "";
+            position: absolute;
+            background-color: #eeeeee;
+            width: 20px;
+            height: 4px;
+            border-radius: 5px;
+            top: -8px
+        }
+    }
+}
+
+.Burger-Bar.Clicked{
+    transform: rotate(45deg);
+    transition: ease-out 0.5s;
+    
+    &::after{
+        transform: scale(0.1);
+        transition: ease-out 0.5s;
+    }
+    
+    &::before{
+        transform: rotate(90deg) translate(8px, 0);
+        transition: ease-out 0.5s;
+    }
+}
+
+
+.Burger-Bar.Unclicked {
+    transform: rotate(0) translate(0);
+    transition: ease-out 0.5s;
+
+    &::after{
+        transform: scale(1);
+        transition: ease-out 0.5s;
+    }
+    
+    &::before{
+        transform: rotate(0deg) translate(0, 0);
+        transition: ease-out 0.5s;
+    }
+}
+
+@media (max-width: 600px){
+    .Burger{
+        display: initial;
+    }
+
+    nav{
+        height: 120px;
+        width: 50px;
+        background-color: #222831;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 50px;
+        right: 0;
+    }
+
+    .External{
+        height: 120px;
+        width: 50px;
+        background-color: #222831;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 0 5px;
+        top: 170px;
+        right: 0;
+    }
+
+    .Visible{
+        animation: fadeInRight 0.5s forwards;
+    }
+
+    .Hidden{
+        animation: fadeOutRight 0.5s forwards;
+        opacity: 0;
+    }
+    
 }

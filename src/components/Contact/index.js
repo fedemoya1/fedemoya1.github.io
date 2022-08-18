@@ -33,7 +33,7 @@ const Contact = () => {
                 <div className='Text-Zone'>
 
                     <h1>
-                        Contáctame
+                        CONTACTO
                     </h1>
                     
                     <p>

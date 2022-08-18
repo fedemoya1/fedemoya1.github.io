@@ -21,7 +21,7 @@ const About = () => {
         <>
             <div className='Container About-Me'>
                 <h1 className='Text-Zone'>
-                    Sobre Mi
+                    SOBRE MI
                 </h1>
                 <section className='Bio'>
                     <p>¡Hola visitante! Me llamo Felix Moya
