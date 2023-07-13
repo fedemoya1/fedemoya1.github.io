@@ -1,7 +1,6 @@
 .Contact{
 
     .Text-Zone{
-        //text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,7 +9,8 @@
 
         h1{
             color:#00adb5;
-            font-weight: 400;
+            font-family: 'Khula', sans-serif;
+            font-weight: 600;
             font-size: 2.5rem;
             letter-spacing: 3px;
         }
@@ -25,12 +25,8 @@
     
     .Contact-Form{
         width: 100%;
-        max-width: 700px;
 
         ul{
-            //display: flex;
-            //flex-direction: column;
-            //gap: 20px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
@@ -39,13 +35,19 @@
             
             li{
                 width: 100%;
+
+                label{
+                    color: #00adb5;
+                }
+
                 input{
                     width: 100%;
                     height: 40px;
                     border: 1px solid #222831;
                     padding: 0px 20px;
                     color: #eeeeee;
-                    background: #393e46;
+                    //background: #393e46;
+                    background-color: #DFDFDF;
                     box-sizing: border-box;
                     font-family: 'Roboto', sans-serif;
                     letter-spacing: 0.5px;
@@ -53,6 +55,7 @@
                     
                     &:focus{
                         outline: none;
+                        border: 1px solid #00adb5;
                     }
 
                     &[type=submit]{
@@ -84,7 +87,8 @@
                     border: 1px solid #222831;
                     padding: 10px 20px;
                     color: #eeeeee;
-                    background: #393e46;
+                    //background: #393e46;
+                    background-color: #DFDFDF;
                     box-sizing: border-box;
                     resize: none;
                     font-family: 'Roboto', sans-serif;
@@ -93,6 +97,7 @@
 
                     &:focus{
                         outline: none;
+                        border: 1px solid #00adb5;
                     }
                 }
             }
@@ -117,4 +122,14 @@
     opacity: 0;
     animation: fadeInUp 1s 1s;
     animation-fill-mode: forwards;
+}
+
+@media (max-width:900px) {
+
+    .Contact{
+        max-width: 95vw;
+        li:first-child, li:nth-child(2){
+            grid-column: 1/3;
+        }
+    }
 }

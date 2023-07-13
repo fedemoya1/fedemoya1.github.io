@@ -1,15 +1,16 @@
 import { Outlet } from 'react-router-dom'
 import NaviBar from '../NaviBar'
+import Bg from '../Background'
 import './index.scss'
 
 const Layout = () => {
     return (
         <div className='app'>
             <NaviBar />
-            
-            <div className='page'>
+            <Bg/>
+            <main className='page'>
                 <Outlet />
-            </div>
+            </main>
         </div>
     )
 }

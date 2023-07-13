@@ -13,8 +13,10 @@ body {
   letter-spacing: 0.5px;
   overflow-x: hidden;
   display: block;
-  color: #eeeeee;
-  background-color: #393e46;
+  min-width: 280px;
+  //color: #eeeeee;
+  //color:#efefef;
+  color: #262626;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

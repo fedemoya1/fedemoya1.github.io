@@ -1,50 +1,122 @@
 .Home-Page{
 
     img{
-        //aspect-ratio: 1 / 1;
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        max-width: 50vw;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
         animation: rollIn 1s ease-out;
-        //animation-delay: 0;
     }
 
     .Text-Zone{
-        text-align: center;
+        width: 100%;
+        position: relative;
+        text-align: left;
         display: flex;
         flex-direction: column;
+        font-family: 'Khula', sans-serif;
         gap: 0px;
-        //box-sizing: border-box;
-        //padding-bottom: 50px;
 
-        h1{
-            color:#00adb5;
-            font-weight: 400;
-            font-size: 2.5rem;
+        &::before{
+            content: '\003cmain\003e';
+            font-size: 14px;
+            top: -40px;
+            left: -20px;
+            color:gray;
+            position: absolute;
         }
 
-        h2{
+        &::after{
+            content: '\003c\2044 main\003e';
+            font-size: 14px;
+            left: -14px;
+            bottom: -25px;
+            color:gray;
+            position: absolute;
+
+        }
+
+        h1{
+            position: relative;
+            font-family: 'Khula', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            line-height: 3.2rem;
+            
+            span{
+                color:#00adb5;
+                font-weight: 700;
+            }
+
+            &::before{
+                content: '\003ch1\003e';
+                font-size: 14px;
+                top:-32px;
+                color:gray;
+                position: absolute;
+                letter-spacing: normal;
+            }
+
+            &::after{
+                content: '\003c\2044  h1\003e';
+                font-size: 14px;
+                bottom: -32px;
+                color:gray;
+                position: absolute;
+                letter-spacing: normal;
+            }
+        }
+
+        p{
+            margin-top: 20px;
+            font-family: 'Khula', sans-serif;
             font-weight: 400;
             font-size: 1.75rem;
             letter-spacing: 3px;
             margin-bottom: 50px;
+            span{
+                color:#00adb5;
+            }
+        }
+
+        a{
+            text-align: center;
         }
     }
 
     .Contact-Button{
         color:#00adb5;
         font-size: 1.75rem;
-        font-weight: 400;
+        font-family: 'Khula', sans-serif;
+        font-weight: 600;
         letter-spacing: 4px;
         text-decoration: none;
-        padding: 20px;
+        padding: 20px 0px;
         border: 1px solid #00adb5;
         white-space: nowrap;
+        margin-right: 20px;
 
         &:hover{
             background: #00adb5;
             color: #eeeeee;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    
+    .Home-Page{
+        flex-direction: row;
+        padding: 50px 0 50px 0;
+        
+        img{
+            object-fit: contain;
+            max-height: 70vh;
+            height: calc(100vh - 50px);
+            border-radius: 15px;
+            animation: fadeIn 1s ease-out;
         }
     }
 }

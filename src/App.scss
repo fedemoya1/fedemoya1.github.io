@@ -1,12 +1,8 @@
 $primary-color: #00adb5;
-/*$color-2: #393e46;
-$color-3: #222831;
-$color-4: #eeeeee;*/
 
 @import 'animate.css';
-//@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap');
 @import '~loaders.css/src/animations/ball-rotate.scss';
 
 .loader-active{
@@ -21,6 +17,5 @@ $color-4: #eeeeee;*/
 }
 
 h1{
-    //font-family: 'Silkscreen', cursive;
     font-family: 'Khula', sans-serif;
 }
