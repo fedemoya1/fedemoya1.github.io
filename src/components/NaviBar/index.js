@@ -86,14 +86,15 @@ const NaviBar = () => {
 
                     <NavLink onClick={reset} exact='true' activeclassname='active' className='Jobs-Link' to='/jobs'>
                         <FontAwesomeIcon icon={faFolderOpen} color='#393e46'/>
-                        {lang? <p>Jobs</p> : <p>Trabajos</p>}
+                        {lang? <p>Projects</p> : <p>Proyectos</p>}
                     </NavLink>
 
+                    {/*
                     <NavLink onClick={reset} exact='true' activeclassname='active' className='Education-Link' to='/education'>
                         <FontAwesomeIcon icon={faGraduationCap} color='#393e46'/>
                         {lang? <p>Education</p> : <p>Educación</p>}
                     </NavLink>
-
+                    */}
                     <NavLink onClick={reset} exact='true' activeclassname='active' className='Contact-Link' to='/contact'>
                         <FontAwesomeIcon icon={faEnvelope} color='#393e46'/>
                         {lang? <p>Contact</p> : <p>Contacto</p>}
@@ -101,10 +102,6 @@ const NaviBar = () => {
 
                     <a href='https://github.com/fedemoya1' target='_blank' rel="noreferrer">
                         <FontAwesomeIcon icon={faGithub} />
-                    </a>
-
-                    <a href='https://www.instagram.com/fedemoya_/' target='_blank' rel="noreferrer">
-                        <FontAwesomeIcon icon={faInstagram} />
                     </a>
 
                     <a href='https://www.linkedin.com/in/fedemoya/' target='_blank' rel="noreferrer">

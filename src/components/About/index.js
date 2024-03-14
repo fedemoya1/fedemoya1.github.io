@@ -28,11 +28,9 @@ const About = () => {
                 <section className='Bio'>
                     <p>
                         {lang ? 
-                        `Hello dear visitor! My name is Felix Moya 
-                        but all my friends calls me Fede. I'm a frontend 
-                        developer with domain of the ReactJS library.`:
-                        `¡Hola visitante! Me llamo Felix Moya, 
-                        pero todos mis amigos me conocen como Fede.
+                        `Hello dear visitor! My name is Federico Moya. I'm a frontend 
+                        developer with domain of the ReactJS library. Currently living in Buenos Aires, Argentina`:
+                        `¡Hola visitante! Me llamo Federico Moya.
                         Soy un Desarrollador Frontend con dominio de
                         la librería de ReactJS. 
                         Residiendo en CABA, Argentina.`
@@ -40,7 +38,7 @@ const About = () => {
                         
                     </p>
                     <p>
-                        {lang ? 
+                        {/*lang ? 
                         `I am passionate about technology
                         mathematics, physics, programming,
                         video games and sports. I consider that
@@ -54,27 +52,25 @@ const About = () => {
                         cualquier profesión ya que nos ayuda a realizar
                         cálculos más fácil y a desarrollar un pensamiento
                         lógico.`
-                        }
+                    */}
                     </p>
-                    <p className='Double-Text'>
-
+                    {/*<p className='Double-Text'>
+                    */}
+                    <p>
                         {lang? 
-                        `Currently in my 3rd year of
+                        `Currently in my 4th year of
                         Electronic Engineering at the Argentina Bussiness 
-                        School (UADE) and at the same time
-                        I continue training in programming. I chose React as the
+                        School (UADE). I chose React as the
                         library in which I wanted to specialize because
                         it has a friendly syntax and also helps
                         to split a page into components, making
                         easier to maintain, scale, and reuse.
                         Some of the languages and tools that I master are:`:
-                        `Actualmente cursando mi 3er año de 
-                        Ingeniería electrónica en la Universidad 
-                        Argentina de la Empresa (UADE) y a la par me 
-                        sigo capacitando en temas de programación
-                        orientado al desarrollo web. Elegí React como la
+                        `Actualmente cursando mi 4to año de 
+                        Ingeniería Electrónica en la Universidad 
+                        Argentina de la Empresa (UADE). Elegí React como la
                         librería en la que me quise especializar porque 
-                        es tiene una sintaxis amigable y, además, ayuda 
+                        tiene una sintaxis amigable y, además, ayuda 
                         a dividir una página en componentes, haciendo que 
                         sean más fáciles de mantener, escalar y reutilizar.
                         Algunos de los lenguajes y herramientas que domino son:`

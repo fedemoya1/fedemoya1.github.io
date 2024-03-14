@@ -10,11 +10,14 @@
 
     .Bio{
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(80px, auto);
-        grid-gap: 30px;
-        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+        //rid-template-rows: minmax(80px, auto);
+        //grid-gap: 30px;
+        //text-align: justify;
         
         .Double-Text{
             grid-column: 1/3;

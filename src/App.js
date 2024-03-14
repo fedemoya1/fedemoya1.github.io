@@ -10,7 +10,7 @@ const Layout = React.lazy(() => import('./components/Layout'));
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Contact = React.lazy(() => import('./components/Contact'));
-//const Jobs = React.lazy(() => import('./components/Jobs'));
+const Jobs = React.lazy(() => import('./components/Jobs'));
 //const Education = React.lazy(() => import('./components/Education'));
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
               <Route index element={<Home /> } />
               <Route path='/about' element={<About />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/jobs' element={<Jobs />} />
               <Route path='*' element={<Home />}/>
             </Route>
           </Routes>
@@ -30,7 +31,6 @@ function App() {
   );
 }
 /*
-<Route path='/jobs' element={<Jobs />} />
 <Route path='/education' element={<Education />} />
 */
 export default App;

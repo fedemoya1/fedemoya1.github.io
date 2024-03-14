@@ -34,18 +34,8 @@ const Contact = () => {
                     
                     <p>
                         {lang? 
-                        `If you want to have your own
-                        website or give
-                        maintenance to the one you already have,
-                        do not hesitate to contact me. I'm
-                        open to listen fulltime proposals or any
-                        other types of consult.`:
-                        `Si quieres tener tu propia 
-                        página web o darle 
-                        mantenimiento a la que ya tienes, 
-                        no dudes en contactarme. También estoy 
-                        abierto a escuchar propuestas fulltime o cualquier
-                        otro tipo de consultas.`
+                        `If you want to reach out, please fill the form.`:
+                        `Si deseas contactarme complete el formulario.`
                         }
                     </p>
                 </div>

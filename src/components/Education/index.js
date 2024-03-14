@@ -3,7 +3,8 @@ import './index.scss';
 import { useSelector } from "react-redux";
 
 const Education = () => {
-
+    
+    const lang = useSelector((state) => state.lang.value);
 
     return(
         <>
