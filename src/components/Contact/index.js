@@ -40,7 +40,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className='Contact-Form'>
-                    <form action="https://formsubmit.co/fedemoyadev@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/87b94bddf6498e5a3828a54ef32bd9ed" method="POST">
                         <ul>
                             <li>
                                 <label htmlFor='name'>{lang? 'Name' : 'Nombre'}</label>

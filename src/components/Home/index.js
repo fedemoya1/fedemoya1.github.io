@@ -3,14 +3,31 @@ import Fede from '../../assets/imagenes/fede.jpeg'
 //import Loader from 'react-loaders'
 import { useSelector } from "react-redux";
 import './index.scss'
+import skills from "../Skills/index"
 
 const Home = () => {
 
     const lang = useSelector((state) => state.lang.value);
 
+    const habilities = skills.map(skill=>{
+        return(
+            <div 
+                key={skill.id}
+                className="Carousel-Card"
+            >
+                <img 
+                    src={skill.image}
+                    alt={skill.alternative}    
+                />
+            </div>
+        )
+    })
+
     return (
         <>
             <div className='Container Home-Page'>
+                <div className="Hero">
+
                 <img src={Fede} alt='Developer'/>
                 
                 <div className='Text-Zone'>
@@ -32,7 +49,14 @@ const Home = () => {
                         {lang? 'Contact me': 'Contáctame'}
                     </Link>
                 </div>
-
+                </div>
+                <h3>{lang ? "Skills" : "Habilidades"}</h3>
+                <div className="Carousel-Container">
+                    <div className="Carousel-Track">
+                       {habilities}
+                       {habilities}
+                   </div>
+               </div>
             </div>
             {/*<Loader type='ball-rotate'/>*/}
         </>

@@ -1,5 +1,7 @@
-.Home-Page{
-
+.Hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img{
         width: 100%;
         max-width: 50vw;
@@ -17,7 +19,7 @@
         flex-direction: column;
         font-family: 'Khula', sans-serif;
         gap: 0px;
-
+    
         &::before{
             content: '\003cmain\003e';
             font-size: 14px;
@@ -26,7 +28,7 @@
             color:gray;
             position: absolute;
         }
-
+    
         &::after{
             content: '\003c\2044 main\003e';
             font-size: 14px;
@@ -34,9 +36,9 @@
             bottom: -25px;
             color:gray;
             position: absolute;
-
+    
         }
-
+    
         h1{
             position: relative;
             font-family: 'Khula', sans-serif;
@@ -49,7 +51,7 @@
                 color:#00adb5;
                 font-weight: 700;
             }
-
+    
             &::before{
                 content: '\003ch1\003e';
                 font-size: 14px;
@@ -58,7 +60,7 @@
                 position: absolute;
                 letter-spacing: normal;
             }
-
+    
             &::after{
                 content: '\003c\2044  h1\003e';
                 font-size: 14px;
@@ -68,7 +70,7 @@
                 letter-spacing: normal;
             }
         }
-
+    
         p{
             margin-top: 20px;
             font-family: 'Khula', sans-serif;
@@ -80,12 +82,12 @@
                 color:#00adb5;
             }
         }
-
+    
         a{
             text-align: center;
         }
     }
-
+    
     .Contact-Button{
         color:#00adb5;
         font-size: 1.75rem;
@@ -97,17 +99,71 @@
         border: 1px solid #00adb5;
         white-space: nowrap;
         margin-right: 20px;
-
+    
         &:hover{
             background: #00adb5;
             color: #eeeeee;
         }
     }
+    
 }
 
-@media (min-width: 700px) {
+.Home-Page{
+
+    h3{
+        font-family: 'Khula', sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        line-height: 3.2rem;
+        color:#00adb5;
+    }
+
+    .Carousel-Container{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        
+        .Carousel-Track {
+            display: flex;
+            width: calc(200px*12);
+
+            animation: slide 15s linear infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes slide {
+                0% {
+                transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .Carousel-Card {
+                width: 200px;
+                padding: 10px;
+
+                img{
+                    width: 100%;
+                }
+            }
+          
+          }
+    }
+
     
-    .Home-Page{
+
+}
+
+@media (min-width: 900px) {
+    
+    .Hero{
+        display: flex;
+        align-items: center;
         flex-direction: row;
         padding: 50px 0 50px 0;
         

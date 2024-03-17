@@ -8,6 +8,8 @@ import python from '../../assets/imagenes/PYTHON.png';
 import vscode from '../../assets/imagenes/VScode.png';
 import git from '../../assets/imagenes/GIT.png';
 import github from '../../assets/imagenes/GITHUB.png';
+import c from "../../assets/imagenes/c.png"
+import sass from "../../assets/imagenes/sass.png"
 
 
 const skills = [
@@ -60,6 +62,16 @@ const skills = [
         image: github,
         alternative: 'GitHub',
         id: 10
+    },
+    {
+        image: c,
+        alternative: 'C',
+        id: 11
+    },
+    {
+        image: sass,
+        alternative: 'Sass',
+        id: 12
     }
 ]
 
