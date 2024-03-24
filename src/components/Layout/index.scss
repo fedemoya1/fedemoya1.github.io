@@ -23,7 +23,8 @@
     min-width: 280px;
     max-width: 1100px;
     width: 95%;
-    min-height: 100vh;
+    //min-height: 100vh;
+    height: fit-content;
     padding: 30px 30px 50px 30px;
     gap: 30px;
     will-change: contents;

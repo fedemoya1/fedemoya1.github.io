@@ -2,7 +2,7 @@ import countryApp from "../../assets/imagenes/country-app.png";
 import todoApp from "../../assets/imagenes/todo-app.png";
 import tipCalcApp from "../../assets/imagenes/tip-calc-app.png";
 import formApp from "../../assets/imagenes/form-app.png";
-import interactiveFormApp from "../../assets/imagenes/interactive-form-app.png";
+//import interactiveFormApp from "../../assets/imagenes/interactive-form-app.png";
 import ipTrackerApp from "../../assets/imagenes/ip-address-app.png";
 import blogCardApp from "../../assets/imagenes/blog-card-app.png";
 
@@ -48,14 +48,14 @@ const projects = [
         id: 6,
         link: "https://blog-preview-card-fedemoya.netlify.app/",
         repository: "https://github.com/fedemoya1/Blog-Preview-Card"
-    },
+    }/*,
     {
         image: interactiveFormApp,
         alternative: "Interactive Form for a Bank Card",
         id: 7,
         link: "https://interactive-form-fedemoya.netlify.app/",
         repository: "https://github.com/fedemoya1/Interactive-Card-Details-Form"
-    }
+    }*/
 ]
 
 export default projects;
