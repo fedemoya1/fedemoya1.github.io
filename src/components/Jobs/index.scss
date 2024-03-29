@@ -18,58 +18,89 @@ a:visited{
 }
 
 .Proyects-Container{
-
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    
+
     .cards{
-        display: flex;
-        flex-direction: column;
-        place-items: center;
+        position: relative;
+        max-width: 500px;
+        aspect-ratio: 16/9;
         border-radius: 15px;
-        box-shadow: 0px 0px 10px #262626;
-        overflow: hidden;
-        max-width: 300px;
+        padding: 20px;
         width: 100%;
-        gap: 20px;
-
-        .btns{
-            display: flex;
-            flex-direction: row;
-            place-content: center;
-            gap: 10px;
-            width:90%;
-            margin-bottom: 20px;
-            
-            .btn{
-                height: 30px;
-                width: 100%;
-                display: grid;
-                place-content: center;
-                border: 1px solid #00adb5;
-                cursor: pointer;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(black, 0.5);
+        &:hover{
+            &:before{
+                opacity: 1;
             }
+            .btns{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+            
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background: rgba(black, 0.6);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
+        }
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+    }
 
-            .btn:hover{
-                background-color: #00adb5;
+    .btns{
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s;
+
+        a{
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            color:#00adb5;
+            font-family: 'Khula', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.5em;
+            border: 1px solid #00adb5;
+            white-space: nowrap;
+        
+            &:hover{
+                background: #00adb5;
                 color: #eeeeee;
             }
-        }
-
-        img{
-            width: 100%;
-            aspect-ratio: 16/9;
-            /*height: 170px;
-            width: 300px;*/
-            cursor: pointer;
-        }
-
-        img:hover{
-            transition: 1s;
-            transform: scale(1.1);
         }
     }
 }

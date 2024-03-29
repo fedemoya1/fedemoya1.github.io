@@ -9,19 +9,15 @@ const Jobs = () => {
     const project = projects.map(obj =>{
         return(
             <div key={obj.id} className="cards">
-                <a href={obj.link} target='_blank' rel="noreferrer">
-                    <img src={obj.image} alt={obj.alternative}/>
-                </a>
+                {/*<a href={obj.link} target='_blank' rel="noreferrer">
+                </a>*/}
+                <img src={obj.image} alt={obj.alternative}/>
                 <div className="btns">
-                    <a href={obj.link} target='_blank' rel="noreferrer">
-                        <div className="btn demo">
-                            Demo
-                        </div>
+                    <a href={obj.link} target='_blank' rel="noreferrer" className="btn demo">
+                        Demo
                     </a>
-                    <a href={obj.repository} target='_blank' rel="noreferrer">
-                        <div className="btn github">
-                            Github
-                        </div>
+                    <a href={obj.repository} target='_blank' rel="noreferrer" className="btn github">
+                        Github
                     </a>
                 </div>
             </div>
