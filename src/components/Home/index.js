@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import Fede from '../../assets/imagenes/fede.jpeg'
+import countryApp from "../../assets/imagenes/country-app.png"
+import todoApp from "../../assets/imagenes/todo-app.png"
 //import Loader from 'react-loaders'
 import { useSelector } from "react-redux";
 import './index.scss'
@@ -57,6 +59,36 @@ const Home = () => {
                        {habilities}
                    </div>
                </div>
+               <h3>{lang ? "Projects" : "Proyectos"}</h3>
+               <div className="Projects-Wrapper">
+                    <div className="Project-Card">
+                        <img src={countryApp} alt="Basic Country info App" className='Images'/>
+                        <div className="Info">
+                            <h2>Country App</h2>
+                            <p>
+                                {lang ? "This app shows basic information about every country in the world." : "Esta app muestra información básica de todos los países del mundo."}
+                            </p>
+                            <a href="https://country-react-app-fede.netlify.app/" className='Contact-Button' target='_blank' rel="noreferrer">
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div className="Project-Card">
+                        <img src={todoApp} alt="Todo App" className='Images'/>
+                        <div className="Info">
+                            <h2>Todo App</h2>
+                            <p>
+                                {lang ? "This app allows you to add and clear chores from a todo list." : "Esta app te permite agregar o eliminar objetivos de una lista de tareas."}
+                            </p>
+                            <a href='https://todo-app-fedemoya.netlify.app/' className='Contact-Button' target='_blank' rel="noreferrer">
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+               </div>
+                <Link to='/jobs' className='Contact-Button'>
+                    {lang? 'More': 'Ver Más'}
+                </Link>
             </div>
             {/*<Loader type='ball-rotate'/>*/}
         </>
