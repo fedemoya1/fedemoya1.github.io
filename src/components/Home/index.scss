@@ -219,19 +219,23 @@
 }
 
 .Info{
-    padding: 20px;
+    //padding: 20px;
+    width: 100%;
     position: relative;
     z-index: 3;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s;
     p{
         letter-spacing: 1px;
         font-size: 15px;
+    }
+    .Contact-Button{
+        padding: 0.25em;
     }
 }
 

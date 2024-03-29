@@ -66,7 +66,7 @@ const Home = () => {
                         <div className="Info">
                             <h2>Country App</h2>
                             <p>
-                                {lang ? "This app shows basic information about every country in the world." : "Esta app muestra información básica de todos los países del mundo."}
+                                {/*lang ? "This app shows basic information about every country in the world." : "Esta app muestra información básica de todos los países del mundo."*/}
                             </p>
                             <a href="https://country-react-app-fede.netlify.app/" className='Contact-Button' target='_blank' rel="noreferrer">
                                 Demo
@@ -78,7 +78,7 @@ const Home = () => {
                         <div className="Info">
                             <h2>Todo App</h2>
                             <p>
-                                {lang ? "This app allows you to add and clear chores from a todo list." : "Esta app te permite agregar o eliminar objetivos de una lista de tareas."}
+                                {/*lang ? "This app allows you to add and clear chores from a todo list." : "Esta app te permite agregar o eliminar objetivos de una lista de tareas."*/}
                             </p>
                             <a href='https://todo-app-fedemoya.netlify.app/' className='Contact-Button' target='_blank' rel="noreferrer">
                                 Demo
